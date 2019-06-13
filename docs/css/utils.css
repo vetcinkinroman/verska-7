@@ -1,0 +1,122 @@
+/*
+ * Box-sizing-model
+ */
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * Responsive images
+*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * Cursor change on hover on Buttons
+*/
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*==========  Desktop First Method  ==========*/
+
+
+/*
+По умолчанию пишем стили для больших экранов.
+Desktop - настольный компьютер, с разрешение от 1200px и более.
+*/
+
+
+/* Large Devices, Wide Screens */
+/* Для экранов с шириной 1999px и менее. Ноутбуки (Laptop) */
+@media only screen and (min-width : 1199px) {
+    section {
+        display: none;
+        animation-duration: 1s;
+    }
+
+}
+
+@media only screen and (max-width : 1199px) {
+    header {
+        display: none;
+        animation-duration: 2s;
+    }
+}
+
+/* Medium Devices, Desktops */
+/* Для экранов с шириной 991px и менее. Планшеты (Tablets) */
+@media only screen and (max-width : 991px) {
+
+}
+
+/* Small Devices, Tablets */
+/* Для экранов с шириной 767px и менее. Планшеты (Tablets) и большие смартфоны. */
+@media only screen and (max-width : 767px) {
+
+}
+
+/* Extra Small Devices, Phones */
+/* Для экранов с шириной 480px и менее. Смартфоны */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+/* Для экранов с шириной 320px и менее. Смартфоны */
+@media only screen and (max-width : 320px) {
+
+}
+

@@ -1,0 +1,80 @@
+@import "utils.css";
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*header-nav=======================*/
+
+header {
+  max-width: 100%;
+}
+
+.navigation-top {
+  background-color: #696969;
+}
+
+.list-top  {
+  margin-left: 120px;
+}
+
+
+.list-top li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.list-top li:last-child {
+  margin-right: 0;
+}
+
+/*sections-nav====================*/
+
+section {
+  width: 30px;
+  height: 600px;
+  background-color: #696969;
+  border-right: 3px solid #DAA520;
+}
+
+section:hover .navigation {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation {
+  width: 300px;
+  height: 600px;
+  background-color: #696969;
+  border-bottom: 3px solid #DAA520;
+  border-right: 3px solid #DAA520;
+  padding:20px;
+  display: none;
+}
+
+ul,li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+}
+
+li:hover {
+  background-color: #DAA520;
+}
+
+.list li:before {
+  content: "♦";
+  font-weight: 400;
+  padding-right: 10px;
+  color: #FF7F50;
+}
